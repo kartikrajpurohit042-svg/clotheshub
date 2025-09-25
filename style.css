@@ -1,0 +1,520 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-attachment: scroll; */
+  background: #111;
+  padding: 35px 8%;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.logo span {
+  color: #ff4d6d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 35px;
+  margin-left: 154px;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: #ff4d6d;
+}
+
+/* Home Section */
+.home {
+  height: 90vh;
+  background: url("hoi-an-photographer-bsqrPGZNKDU-unsplash.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.home h1 {
+  font-size: 58px;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ff4d6d;
+  color: #fff;
+  padding: 25px 150px;
+  /* height: 150px; */
+  /* margin-bottom: 200px; */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e63e5c;
+}
+
+/* Men Section */
+.men {
+  min-height: 100vh;
+  background: url("pexels-cottonbro-8088499.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.men h1 {
+  font-size: 52px;
+  margin-bottom: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.men-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.men-item {
+  background-color: #ffffff88;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.men-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.men-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.men-item h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.men-item p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.men-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: #ff4d6d;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-buy:hover {
+  background: #e63e5c;
+  transform: scale(1.05);
+}
+
+/* women section */
+.women {
+  min-height: 100vh;
+  background: url("febrian-zakaria-cLW3HGL55tg-unsplash.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+.women h1{
+   font-size: 52px;
+  margin-bottom: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.women-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.women-item {
+  background-color: #4385a988;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* margin-bottom: 250px; */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.women-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.women-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.women-item h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.women-item p {
+  font-size: 15px;
+  color: #161414;
+  margin-bottom: 12px;
+}
+
+.women-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: #ff4d6d;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-buy:hover {
+  background: #e63e5c;
+  transform: scale(1.05);
+}
+
+
+/* kids section */
+.kids {
+  min-height: 100vh;
+  background: url("alex-gallegos-O2z8L2yqJaQ-unsplash.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+.kids h1{
+   font-size: 52px;
+  margin-bottom: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.kids-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kids-item {
+  background-color: #a9484388;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* margin-bottom: 250px; */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kids-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.kids-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.kids-item h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.kids-item p {
+  font-size: 15px;
+  color: #161414;
+  margin-bottom: 12px;
+}
+
+.kids-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: #ff4d6d;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-buy:hover {
+  background: #e63e5c;
+  transform: scale(1.05);
+}
+
+/* sale section */
+.sale {
+  min-height: 100vh;
+  background: url("xiaolong-wong-pdx1LH_TMJM-unsplash.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+.sale h1{
+   font-size: 52px;
+  margin-bottom: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.sale-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sale-item {
+  background-color: #a99b4388;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* margin-bottom: 250px; */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sale-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.sale-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.sale-item h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.sale-item p {
+  font-size: 15px;
+  color: #161414;
+  margin-bottom: 12px;
+}
+
+.sale-item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: #ff4d6d;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-buy:hover {
+  background: #e63e5c;
+  transform: scale(1.05);
+}
+
+/* contact section */
+/* Contact Section */
+.contact-section {
+  padding: 80px 10%;
+  background-image: url("yap-Kvu8S9HlvcA-unsplash.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Creates parallax effect */
+  color: #ffffff22;
+  text-align: center;
+  position: relative;
+}
+
+/* Overlay for better text readability */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55); /* Dark overlay */
+  z-index: 1;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+/* Brand Cards */
+.brand-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.brand-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+  border-left: 5px solid #007BFF;
+  padding-left: 10px;
+}
+
+.brand-card p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.brand-card strong {
+  color: #000;
+}
+
+.brand-card a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.brand-card a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
